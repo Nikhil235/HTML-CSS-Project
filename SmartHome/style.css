@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #1e5efe;
-  --primary-variant-color: rgba(0, 0, 240, 0.2);
+  --primary-color: #000614;
+  --primary-variant-color: rgba(0, 0, 0, 0.2);
   --white-color: #fff;
   --light-color: #f4f4f4;
   --black-color: #000f37;
@@ -164,7 +164,7 @@ header {
 
 #header__title {
   padding-top: 12rem;
-  color: var(--color-white);
+  color: var(--white-color);
 }
 
 header p {
@@ -208,11 +208,44 @@ header p {
 }
 
 .header__socials {
-  background: red;
   position: absolute;
   left: 3rem;
   top: 38%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  font-size: 1.8rem;
+}
+.header__decorator-1 {
+  position: absolute;
+}
+
+.header__decorator-2 {
+  position: absolute;
+  right: 0;
+  margin-top: -24rem;
+}
+
+/* ==========================About==================== */
+
+.about__title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about__article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.about__article-title {
+  color: var(--black-color);
+  margin-bottom: 1.5rem;
+}
+
+.about__article .btn {
+  margin-top: 2.4rem;
 }
